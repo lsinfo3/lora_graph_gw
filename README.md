@@ -34,3 +34,8 @@ S3 is a special case, as it processes different datasets. To acquire new data fo
 - Voronoi_to_Simulation.py: lines 40 and 67
 
 To produce the voronoi cover results, the "sensors.csv" file from the "Get_OpenStreetMapData.ipynb" script can be converted to the input format used by the voronoi cover script using the "Sensors_to_Voronoi.py" script and processed with the voronoi cover script (https://github.com/DomiBau/VoronoiCover). The results can be converted to the simulation input using the "Voronoi_to_Simulation.py" script.
+
+## S5
+This scenario is separated into sub scenarios. The general script for performing the clustering is found in the main directory of the scenario. Further subdirectories automate the process for the other scenarios evaluated in the Paper, but use the same internal implementation. The analysis from then on is the same as the other scenarios.
+### S5.3
+The naming scheme for the sensor files is different from previous scenarios. To process different cities, the sensor files should follow the template "sensors_XX.csv" for this scenario. The script has an option in the main loop to define which values of "XX" are processed. This could also be removed, if it is not required.
